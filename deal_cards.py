@@ -18,4 +18,8 @@ def deal_cards(deck, number):
 
     # Показать величину карт на руках.
     print('Величина карт на руках: ', hand_value)
+    if hand_value > 21:
+        print('Перебор')
+    else:
+        print('Меньше 21')
     return deck, number
